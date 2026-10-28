@@ -15,6 +15,7 @@ export default {
     "dark": "#082f49"
   },
   "heroImage": "https://loremflickr.com/1600/900/airplane,sky?lock=61",
+  "heroWiki": "Airbus A320 family",
   "contacts": {
     "phone": "+996 774 054 601",
     "instagram": "satyba1dyev18",
@@ -31,14 +32,14 @@ export default {
       "en": "Flights from Bishkek and Osh"
     },
     "heroTitle": {
-      "ky": "Арзан авиабилеттер — бир нече чыкылдатуу менен",
+      "ky": "Арзан авиабилеттер — бир нече чыкылдатууда",
       "ru": "Дешёвые авиабилеты — в пару кликов",
       "en": "Cheap flights in a few clicks"
     },
     "heroText": {
-      "ky": "Москва, Стамбул, Дубай, Алматы, Ош жана башка багыттар. Багаж, орун тандоо жана 24/7 колдоо.",
-      "ru": "Москва, Стамбул, Дубай, Алматы, Ош и другие направления. Багаж, выбор места, поддержка 24/7.",
-      "en": "Moscow, Istanbul, Dubai, Almaty, Osh and more. Baggage, seat choice, 24/7 support."
+      "ky": "Ош, Москва, Стамбул, Дубай, Сеул жана Европага 26 багыт. Билетти онлайн сатып алып, ордуңузду жана багажды тандаңыз.",
+      "ru": "26 направлений: Ош, Москва, Стамбул, Дубай, Сеул и Европа. Покупайте онлайн, выбирайте место и багаж.",
+      "en": "26 routes: Osh, Moscow, Istanbul, Dubai, Seoul and Europe. Buy online and choose seats and baggage."
     },
     "catalog": {
       "ky": "Рейстер",
@@ -46,19 +47,19 @@ export default {
       "en": "Flights"
     },
     "catalogText": {
-      "ky": "Багыт жана баа боюнча рейс тандаңыз",
-      "ru": "Выбирайте рейс по направлению и цене",
-      "en": "Pick a flight by route and price"
+      "ky": "Багыт, баа жана авиакомпания боюнча тандаңыз",
+      "ru": "Выбирайте по направлению, цене и авиакомпании",
+      "en": "Filter by route, price and airline"
     },
     "search": {
-      "ky": "Шаар: Москва, Стамбул, Ош…",
-      "ru": "Город: Москва, Стамбул, Ош…",
-      "en": "City: Moscow, Istanbul, Osh…"
+      "ky": "Шаар издөө: Москва, Дубай…",
+      "ru": "Поиск города: Москва, Дубай…",
+      "en": "Search a city: Moscow, Dubai…"
     },
     "plans": {
-      "ky": "Кошумчалар",
+      "ky": "Кошумча кызматтар",
       "ru": "Доп. услуги",
-      "en": "Add-ons"
+      "en": "Extras"
     },
     "plansText": {
       "ky": "Багаж, орун жана камсыздандыруу",
@@ -66,19 +67,19 @@ export default {
       "en": "Baggage, seats and insurance"
     },
     "booking": {
-      "ky": "Билетти брондоо",
+      "ky": "Билет брондоо",
       "ru": "Бронь билета",
-      "en": "Hold a ticket"
+      "en": "Booking"
     },
     "bookingText": {
-      "ky": "Рейсти тандап, билетти 24 саатка брондоңуз",
-      "ru": "Выберите рейс и забронируйте на 24 часа",
-      "en": "Choose a flight and hold it for 24 hours"
+      "ky": "Учуу күнүн жана классты тандаңыз",
+      "ru": "Выберите дату вылета и класс",
+      "en": "Pick a date and class"
     },
     "bookBtn": {
       "ky": "Брондоо",
       "ru": "Забронировать",
-      "en": "Hold"
+      "en": "Book"
     },
     "buy": {
       "ky": "Билет сатып алуу",
@@ -86,9 +87,9 @@ export default {
       "en": "Buy ticket"
     },
     "about": {
-      "ky": "FlyKG — Кыргызстандан учуулар үчүн авиабилеттер.",
-      "ru": "FlyKG — авиабилеты для перелётов из Кыргызстана.",
-      "en": "FlyKG — flights from Kyrgyzstan."
+      "ky": "FlyKG — Кыргызстандагы онлайн авиакасса: 20дан ашык авиакомпаниянын билеттери.",
+      "ru": "FlyKG — онлайн-авиакасса Кыргызстана: билеты 20+ авиакомпаний.",
+      "en": "FlyKG is Kyrgyzstan’s online ticket office for 20+ airlines."
     }
   },
   "categories": [
@@ -96,11 +97,12 @@ export default {
       "id": "domestic",
       "name": {
         "ky": "Ички рейстер",
-        "ru": "Внутренние",
+        "ru": "Внутренние рейсы",
         "en": "Domestic"
       },
       "icon": "🇰🇬",
-      "image": "https://loremflickr.com/800/600/airport,mountains?lock=1018"
+      "wiki": "Manas International Airport",
+      "tags": "airport,kyrgyzstan"
     },
     {
       "id": "russia",
@@ -109,18 +111,20 @@ export default {
         "ru": "Россия",
         "en": "Russia"
       },
-      "icon": "🇷🇺",
-      "image": "https://loremflickr.com/800/600/moscow,kremlin?lock=999"
+      "icon": "🏙️",
+      "wiki": "Moscow Kremlin",
+      "tags": "moscow,city"
     },
     {
       "id": "asia",
       "name": {
-        "ky": "Азия жана Түркия",
-        "ru": "Азия и Турция",
-        "en": "Asia & Turkey"
+        "ky": "Азия жана КМШ",
+        "ru": "Азия и СНГ",
+        "en": "Asia & CIS"
       },
       "icon": "🌏",
-      "image": "https://loremflickr.com/800/600/istanbul,city?lock=962"
+      "wiki": "Almaty",
+      "tags": "asia,city"
     },
     {
       "id": "mideast",
@@ -130,23 +134,36 @@ export default {
         "en": "Middle East"
       },
       "icon": "🕌",
-      "image": "https://loremflickr.com/800/600/dubai,city?lock=992"
+      "wiki": "Dubai",
+      "tags": "dubai"
+    },
+    {
+      "id": "europe",
+      "name": {
+        "ky": "Европа",
+        "ru": "Европа",
+        "en": "Europe"
+      },
+      "icon": "🇪🇺",
+      "wiki": "Frankfurt Airport",
+      "tags": "europe,airport"
     }
   ],
   "plans": [
     {
-      "id": "bag-23",
+      "id": "bag",
       "icon": "🧳",
       "price": 3500,
+      "popular": true,
       "title": {
         "ky": "Багаж 23 кг",
         "ru": "Багаж 23 кг",
         "en": "Baggage 23 kg"
       },
       "desc": {
-        "ky": "Бир багытка",
-        "ru": "В одну сторону",
-        "en": "One way"
+        "ky": "Кошумча бир чемодан",
+        "ru": "Дополнительный чемодан",
+        "en": "One extra suitcase"
       }
     },
     {
@@ -165,33 +182,33 @@ export default {
       }
     },
     {
-      "id": "insur",
+      "id": "insurance",
       "icon": "🛡️",
       "price": 900,
-      "popular": true,
       "title": {
         "ky": "Учуу камсыздандыруусу",
         "ru": "Страховка перелёта",
         "en": "Flight insurance"
       },
       "desc": {
-        "ky": "Кечигүү жана багаж",
-        "ru": "Задержка и багаж",
-        "en": "Delay and baggage"
+        "ky": "Кечигүү жана жоготуудан",
+        "ru": "От задержки и потери багажа",
+        "en": "Delays and lost baggage"
       }
     }
   ],
   "booking": {
     "slots": [
+      "06:30",
       "09:00",
-      "12:00",
-      "15:00",
-      "18:00",
-      "21:00"
+      "12:30",
+      "15:45",
+      "19:20",
+      "23:50"
     ],
     "formats": [
       {
-        "id": "econom",
+        "id": "economy",
         "label": {
           "ky": "Эконом",
           "ru": "Эконом",
@@ -212,34 +229,20 @@ export default {
       "ru": "Рейс",
       "en": "Flight"
     },
-    "people": true,
     "sundayOff": false
   },
   "features": [
     {
       "icon": "💸",
       "title": {
-        "ky": "Комиссиясыз",
-        "ru": "Без наценки",
-        "en": "No markup"
+        "ky": "Эң арзан баа",
+        "ru": "Лучшая цена",
+        "en": "Best price"
       },
       "text": {
-        "ky": "Авиакомпаниянын баасы.",
-        "ru": "Цены авиакомпаний.",
-        "en": "Airline prices."
-      }
-    },
-    {
-      "icon": "🔁",
-      "title": {
-        "ky": "Алмаштыруу",
-        "ru": "Обмен",
-        "en": "Changes"
-      },
-      "text": {
-        "ky": "Билетти алмаштырууга жардам.",
-        "ru": "Помощь с обменом билета.",
-        "en": "Help with ticket changes."
+        "ky": "20+ авиакомпанияны салыштырабыз.",
+        "ru": "Сравниваем 20+ авиакомпаний.",
+        "en": "We compare 20+ airlines."
       }
     },
     {
@@ -250,7 +253,7 @@ export default {
         "en": "E-ticket"
       },
       "text": {
-        "ky": "Почтага жана WhatsApp'ка.",
+        "ky": "Почтага жана WhatsApp’ка.",
         "ru": "На почту и в WhatsApp.",
         "en": "By email and WhatsApp."
       }
@@ -258,20 +261,33 @@ export default {
     {
       "icon": "🕐",
       "title": {
-        "ky": "24/7",
-        "ru": "24/7",
-        "en": "24/7"
+        "ky": "24/7 колдоо",
+        "ru": "Поддержка 24/7",
+        "en": "24/7 support"
       },
       "text": {
-        "ky": "Түнкү рейстерде да колдоо.",
-        "ru": "Поддержка и ночью.",
-        "en": "Support even at night."
+        "ky": "Рейс өзгөрсө жардам беребиз.",
+        "ru": "Поможем при изменении рейса.",
+        "en": "Help with schedule changes."
+      }
+    },
+    {
+      "icon": "💳",
+      "title": {
+        "ky": "Ыңгайлуу төлөм",
+        "ru": "Удобная оплата",
+        "en": "Easy payment"
+      },
+      "text": {
+        "ky": "Карта, Элсом, терминал.",
+        "ru": "Карта, Элсом, терминал.",
+        "en": "Card, Elsom or kiosk."
       }
     }
   ],
   "stats": [
     {
-      "value": "12",
+      "value": "26",
       "label": {
         "ky": "багыт",
         "ru": "направлений",
@@ -279,38 +295,38 @@ export default {
       }
     },
     {
-      "value": "FRU",
+      "value": "20+",
       "label": {
-        "ky": "Манас аэропорту",
-        "ru": "аэропорт Манас",
-        "en": "Manas airport"
+        "ky": "авиакомпания",
+        "ru": "авиакомпаний",
+        "en": "airlines"
       }
     },
     {
-      "value": "0%",
+      "value": "50 000+",
       "label": {
-        "ky": "комиссия",
-        "ru": "комиссия",
-        "en": "fee"
+        "ky": "жүргүнчү",
+        "ru": "пассажиров",
+        "en": "passengers"
       }
     },
     {
-      "value": "24/7",
+      "value": "4.8★",
       "label": {
-        "ky": "колдоо",
-        "ru": "поддержка",
-        "en": "support"
+        "ky": "рейтинг",
+        "ru": "рейтинг",
+        "en": "rating"
       }
     }
   ],
   "specLabels": {
     "from": {
-      "ky": "Каяктан",
+      "ky": "Кайдан",
       "ru": "Откуда",
       "en": "From"
     },
     "to": {
-      "ky": "Каякка",
+      "ky": "Кайда",
       "ru": "Куда",
       "en": "To"
     },
@@ -343,9 +359,9 @@ export default {
         "чемодан"
       ],
       "answer": {
-        "ky": "Кол жүгү баасына кирет; 23 кг багажды \"Кошумчалар\" бетинен кошуңуз.",
-        "ru": "Ручная кладь включена; багаж 23 кг — в «Доп. услугах».",
-        "en": "Carry-on included; add 23 kg baggage in Add-ons."
+        "ky": "Көп рейстерде 20–23 кг багаж кошулган. Кошумча багажды \"Кошумча кызматтардан\" алыңыз.",
+        "ru": "На большинстве рейсов включено 20–23 кг. Доп. багаж — в «Доп. услугах».",
+        "en": "Most fares include 20–23 kg; buy extra in Extras."
       },
       "link": "/plans"
     },
@@ -356,31 +372,35 @@ export default {
         "refund"
       ],
       "answer": {
-        "ky": "Кайтаруу тарифке жараша — WhatsApp аркылуу жазыңыз.",
-        "ru": "Возврат зависит от тарифа — напишите в WhatsApp.",
-        "en": "Refunds depend on fare — message us."
+        "ky": "Кайтаруу шарттары тарифке жараша — менеджерге жазыңыз.",
+        "ru": "Условия возврата зависят от тарифа — напишите менеджеру.",
+        "en": "Refund rules depend on the fare — contact us."
       },
       "link": "/contact"
+    },
+    {
+      "keys": [
+        "арзан",
+        "дешев",
+        "cheap"
+      ],
+      "answer": {
+        "ky": "Эң арзан билеттер — Бишкек–Ош жана Бишкек–Алматы.",
+        "ru": "Самые дешёвые — Бишкек–Ош и Бишкек–Алматы.",
+        "en": "Cheapest: Bishkek–Osh and Bishkek–Almaty."
+      },
+      "link": "/catalog?sort=price_asc"
     }
   ],
   "priceNote": {
-    "ky": "Баалар бир багытка, эконом, болжолдуу (2026-ж. күз). Так баа датага жараша.",
-    "ru": "Цены в одну сторону, эконом, ориентировочно (осень 2026).",
-    "en": "One-way economy, approximate (autumn 2026)."
+    "ky": "Баалар бир тарапка, эконом класс, болжолдуу; күнгө жараша өзгөрөт.",
+    "ru": "Цены в одну сторону, эконом, ориентировочные.",
+    "en": "One-way economy, approximate; varies by date."
   },
   "dataNote": {
-    "ky": "Баалар болжолдуу; учуу датасына жараша өзгөрөт.",
-    "ru": "Цены ориентировочные; зависят от даты.",
-    "en": "Approximate; depend on date."
+    "ky": "Баалар болжолдуу (28.10.2026), рейстер демо максатта. Сүрөттөр: Wikipedia / Wikimedia Commons.",
+    "ru": "Цены ориентировочные (28.10.2026), рейсы демонстрационные. Фото: Wikipedia.",
+    "en": "Approximate prices (28.10.2026); demo schedule. Photos: Wikipedia."
   },
-  "sources": [
-    {
-      "title": "aviasales.ru — Бишкек",
-      "url": "https://www.aviasales.ru/cities/bishkek-bsz"
-    },
-    {
-      "title": "uniticket.ru — Бишкек–Россия",
-      "url": "https://uniticket.ru/bilet/bishkek/russia/"
-    }
-  ]
+  "sources": []
 };

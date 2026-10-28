@@ -1,34 +1,40 @@
-// FlyKG: каталогдун баштапкы маалыматы (базага биринчи жолу жүктөлөт, андан кийин админ панелден өзгөртүлөт)
+// FlyKG: каталогдун баштапкы маалыматы. Базага биринчи жолу жүктөлөт (сүрөттөр Wikipedia API аркылуу), андан кийин админ панелден өзгөртүлөт.
 export default [
   {
     "buyable": true,
-    "popular": 10,
-    "id": "fru-osh",
-    "title": "Бишкек → Ош",
-    "subtitle": {
-      "ky": "Avia Traffic / Air Manas · 55 мүн",
-      "ru": "Avia Traffic / Air Manas · 55 мүн",
-      "en": "Avia Traffic / Air Manas · 55 мүн"
+    "popular": 20,
+    "id": "bishkek-osh",
+    "title": {
+      "ky": "Бишкек → Ош",
+      "ru": "Бишкек → Ош",
+      "en": "Bishkek → Osh"
     },
     "category": "domestic",
     "price": 3900,
+    "stock": 14,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
     "desc": {
-      "ky": "Бишкек (FRU) шаарынан Ош (OSS) шаарына түз же 1 конуу менен рейс.",
-      "ru": "Рейс Бишкек (FRU) — Ош (OSS), прямой или с 1 пересадкой.",
-      "en": "Flight Бишкек (FRU) — Ош (OSS), direct or 1 stop."
+      "ky": "Эң популярдуу ички рейс, күнүнө 8 жолу.",
+      "ru": "Самый популярный внутренний рейс, 8 раз в день.",
+      "en": "The busiest domestic route, 8 flights a day."
     },
     "specs": [
       [
         "from",
-        "Бишкек (FRU)"
+        "FRU"
       ],
       [
         "to",
-        "Ош (OSS)"
+        "OSS"
       ],
       [
         "airline",
-        "Avia Traffic / Air Manas"
+        "Avia Traffic"
       ],
       [
         "time",
@@ -36,48 +42,52 @@ export default [
       ],
       [
         "bag",
-        "Кол жүгү 10 кг"
+        "10 кг кол жүк"
       ],
       [
         "type",
-        "Эконом"
+        "Түз"
       ]
     ],
-    "tags": [
-      "ош"
-    ],
-    "badge": "Арзан",
-    "image": "https://loremflickr.com/800/600/airplane,mountains?lock=527",
+    "tags": [],
+    "wiki": "Osh",
+    "image": "https://loremflickr.com/800/600/airport,kyrgyzstan?lock=7905",
     "gallery": [
-      "https://loremflickr.com/800/600/airplane,mountains?lock=528",
-      "https://loremflickr.com/800/600/airplane,mountains?lock=529"
+      "https://loremflickr.com/800/600/airport,kyrgyzstan?lock=7906",
+      "https://loremflickr.com/800/600/airport,kyrgyzstan?lock=7907"
     ]
   },
   {
     "buyable": true,
-    "popular": 5,
-    "id": "fru-batken",
-    "title": "Бишкек → Баткен",
-    "subtitle": {
-      "ky": "TezJet · 1 с 10 мүн",
-      "ru": "TezJet · 1 с 10 мүн",
-      "en": "TezJet · 1 с 10 мүн"
+    "popular": 9,
+    "id": "bishkek-batken",
+    "title": {
+      "ky": "Бишкек → Баткен",
+      "ru": "Бишкек → Баткен",
+      "en": "Bishkek → Batken"
     },
     "category": "domestic",
     "price": 4500,
+    "stock": 17,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
     "desc": {
-      "ky": "Бишкек (FRU) шаарынан Баткен шаарына түз же 1 конуу менен рейс.",
-      "ru": "Рейс Бишкек (FRU) — Баткен, прямой или с 1 пересадкой.",
-      "en": "Flight Бишкек (FRU) — Баткен, direct or 1 stop."
+      "ky": "Баткенге түз рейс, жумасына 4 жолу.",
+      "ru": "Прямой рейс в Баткен, 4 раза в неделю.",
+      "en": "Direct to Batken, 4 times a week."
     },
     "specs": [
       [
         "from",
-        "Бишкек (FRU)"
+        "FRU"
       ],
       [
         "to",
-        "Баткен"
+        "BTK"
       ],
       [
         "airline",
@@ -89,203 +99,52 @@ export default [
       ],
       [
         "bag",
-        "Кол жүгү 10 кг"
+        "10 кг"
       ],
       [
         "type",
-        "Эконом"
+        "Түз"
       ]
     ],
-    "tags": [
-      "баткен"
-    ],
-    "image": "https://loremflickr.com/800/600/airplane,small?lock=534",
+    "tags": [],
+    "wiki": "Batken",
+    "image": "https://loremflickr.com/800/600/airport,kyrgyzstan?lock=4074",
     "gallery": [
-      "https://loremflickr.com/800/600/airplane,small?lock=535",
-      "https://loremflickr.com/800/600/airplane,small?lock=536"
+      "https://loremflickr.com/800/600/airport,kyrgyzstan?lock=4075",
+      "https://loremflickr.com/800/600/airport,kyrgyzstan?lock=4076"
     ]
   },
   {
     "buyable": true,
-    "popular": 5,
-    "id": "fru-jalal",
-    "title": "Бишкек → Жалал-Абад",
-    "subtitle": {
-      "ky": "TezJet · 1 с",
-      "ru": "TezJet · 1 с",
-      "en": "TezJet · 1 с"
+    "popular": 8,
+    "id": "bishkek-jalal-abad",
+    "title": {
+      "ky": "Бишкек → Жалал-Абад",
+      "ru": "Бишкек → Джалал-Абад",
+      "en": "Bishkek → Jalal-Abad"
     },
     "category": "domestic",
     "price": 4200,
+    "stock": 3,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
     "desc": {
-      "ky": "Бишкек (FRU) шаарынан Жалал-Абад шаарына түз же 1 конуу менен рейс.",
-      "ru": "Рейс Бишкек (FRU) — Жалал-Абад, прямой или с 1 пересадкой.",
-      "en": "Flight Бишкек (FRU) — Жалал-Абад, direct or 1 stop."
+      "ky": "Жаңыланган Жалал-Абад аэропортуна.",
+      "ru": "В обновлённый аэропорт Джалал-Абада.",
+      "en": "To the renovated Jalal-Abad airport."
     },
     "specs": [
       [
         "from",
-        "Бишкек (FRU)"
+        "FRU"
       ],
       [
         "to",
-        "Жалал-Абад"
-      ],
-      [
-        "airline",
-        "TezJet"
-      ],
-      [
-        "time",
-        "1 с"
-      ],
-      [
-        "bag",
-        "Кол жүгү 10 кг"
-      ],
-      [
-        "type",
-        "Эконом"
-      ]
-    ],
-    "tags": [
-      "жалал-абад"
-    ],
-    "image": "https://loremflickr.com/800/600/propeller,plane?lock=541",
-    "gallery": [
-      "https://loremflickr.com/800/600/propeller,plane?lock=542",
-      "https://loremflickr.com/800/600/propeller,plane?lock=543"
-    ]
-  },
-  {
-    "buyable": true,
-    "popular": 10,
-    "id": "fru-svo",
-    "title": "Бишкек → Москва",
-    "subtitle": {
-      "ky": "Аэрофлот / S7 / Avia Traffic · 4 с 30 мүн",
-      "ru": "Аэрофлот / S7 / Avia Traffic · 4 с 30 мүн",
-      "en": "Аэрофлот / S7 / Avia Traffic · 4 с 30 мүн"
-    },
-    "category": "russia",
-    "price": 17500,
-    "desc": {
-      "ky": "Бишкек (FRU) шаарынан Москва (SVO/DME) шаарына түз же 1 конуу менен рейс.",
-      "ru": "Рейс Бишкек (FRU) — Москва (SVO/DME), прямой или с 1 пересадкой.",
-      "en": "Flight Бишкек (FRU) — Москва (SVO/DME), direct or 1 stop."
-    },
-    "specs": [
-      [
-        "from",
-        "Бишкек (FRU)"
-      ],
-      [
-        "to",
-        "Москва (SVO/DME)"
-      ],
-      [
-        "airline",
-        "Аэрофлот / S7 / Avia Traffic"
-      ],
-      [
-        "time",
-        "4 с 30 мүн"
-      ],
-      [
-        "bag",
-        "Кол жүгү 10 кг"
-      ],
-      [
-        "type",
-        "Эконом"
-      ]
-    ],
-    "tags": [
-      "москва"
-    ],
-    "image": "https://loremflickr.com/800/600/moscow,city?lock=548",
-    "gallery": [
-      "https://loremflickr.com/800/600/moscow,city?lock=549",
-      "https://loremflickr.com/800/600/moscow,city?lock=550"
-    ]
-  },
-  {
-    "buyable": true,
-    "popular": 7,
-    "id": "fru-led",
-    "title": "Бишкек → Санкт-Петербург",
-    "subtitle": {
-      "ky": "Аэрофлот / Pobeda · 5 с 30 мүн",
-      "ru": "Аэрофлот / Pobeda · 5 с 30 мүн",
-      "en": "Аэрофлот / Pobeda · 5 с 30 мүн"
-    },
-    "category": "russia",
-    "price": 21000,
-    "desc": {
-      "ky": "Бишкек (FRU) шаарынан Санкт-Петербург (LED) шаарына түз же 1 конуу менен рейс.",
-      "ru": "Рейс Бишкек (FRU) — Санкт-Петербург (LED), прямой или с 1 пересадкой.",
-      "en": "Flight Бишкек (FRU) — Санкт-Петербург (LED), direct or 1 stop."
-    },
-    "specs": [
-      [
-        "from",
-        "Бишкек (FRU)"
-      ],
-      [
-        "to",
-        "Санкт-Петербург (LED)"
-      ],
-      [
-        "airline",
-        "Аэрофлот / Pobeda"
-      ],
-      [
-        "time",
-        "5 с 30 мүн"
-      ],
-      [
-        "bag",
-        "Кол жүгү 10 кг"
-      ],
-      [
-        "type",
-        "Эконом"
-      ]
-    ],
-    "tags": [
-      "санкт-петербург"
-    ],
-    "image": "https://loremflickr.com/800/600/petersburg,city?lock=555",
-    "gallery": [
-      "https://loremflickr.com/800/600/petersburg,city?lock=556",
-      "https://loremflickr.com/800/600/petersburg,city?lock=557"
-    ]
-  },
-  {
-    "buyable": true,
-    "popular": 5,
-    "id": "fru-kzn",
-    "title": "Бишкек → Казань",
-    "subtitle": {
-      "ky": "Avia Traffic · 4 с",
-      "ru": "Avia Traffic · 4 с",
-      "en": "Avia Traffic · 4 с"
-    },
-    "category": "russia",
-    "price": 16000,
-    "desc": {
-      "ky": "Бишкек (FRU) шаарынан Казань (KZN) шаарына түз же 1 конуу менен рейс.",
-      "ru": "Рейс Бишкек (FRU) — Казань (KZN), прямой или с 1 пересадкой.",
-      "en": "Flight Бишкек (FRU) — Казань (KZN), direct or 1 stop."
-    },
-    "specs": [
-      [
-        "from",
-        "Бишкек (FRU)"
-      ],
-      [
-        "to",
-        "Казань (KZN)"
+        "JAL"
       ],
       [
         "airline",
@@ -293,159 +152,60 @@ export default [
       ],
       [
         "time",
-        "4 с"
+        "1 саат"
       ],
       [
         "bag",
-        "Кол жүгү 10 кг"
+        "10 кг"
       ],
       [
         "type",
-        "Эконом"
+        "Түз"
       ]
     ],
-    "tags": [
-      "казань"
-    ],
-    "image": "https://loremflickr.com/800/600/kazan,city?lock=562",
+    "tags": [],
+    "wiki": "Jalal-Abad",
+    "image": "https://loremflickr.com/800/600/airport,kyrgyzstan?lock=2692",
     "gallery": [
-      "https://loremflickr.com/800/600/kazan,city?lock=563",
-      "https://loremflickr.com/800/600/kazan,city?lock=564"
-    ]
-  },
-  {
-    "buyable": true,
-    "popular": 5,
-    "id": "fru-nsk",
-    "title": "Бишкек → Новосибирск",
-    "subtitle": {
-      "ky": "S7 Airlines · 3 с",
-      "ru": "S7 Airlines · 3 с",
-      "en": "S7 Airlines · 3 с"
-    },
-    "category": "russia",
-    "price": 14500,
-    "desc": {
-      "ky": "Бишкек (FRU) шаарынан Новосибирск (OVB) шаарына түз же 1 конуу менен рейс.",
-      "ru": "Рейс Бишкек (FRU) — Новосибирск (OVB), прямой или с 1 пересадкой.",
-      "en": "Flight Бишкек (FRU) — Новосибирск (OVB), direct or 1 stop."
-    },
-    "specs": [
-      [
-        "from",
-        "Бишкек (FRU)"
-      ],
-      [
-        "to",
-        "Новосибирск (OVB)"
-      ],
-      [
-        "airline",
-        "S7 Airlines"
-      ],
-      [
-        "time",
-        "3 с"
-      ],
-      [
-        "bag",
-        "Кол жүгү 10 кг"
-      ],
-      [
-        "type",
-        "Эконом"
-      ]
-    ],
-    "tags": [
-      "новосибирск"
-    ],
-    "image": "https://loremflickr.com/800/600/siberia,winter?lock=569",
-    "gallery": [
-      "https://loremflickr.com/800/600/siberia,winter?lock=570",
-      "https://loremflickr.com/800/600/siberia,winter?lock=571"
-    ]
-  },
-  {
-    "buyable": true,
-    "popular": 9,
-    "id": "fru-ist",
-    "title": "Бишкек → Стамбул",
-    "subtitle": {
-      "ky": "Turkish Airlines / Pegasus · 6 с",
-      "ru": "Turkish Airlines / Pegasus · 6 с",
-      "en": "Turkish Airlines / Pegasus · 6 с"
-    },
-    "category": "asia",
-    "price": 23000,
-    "desc": {
-      "ky": "Бишкек (FRU) шаарынан Стамбул (IST) шаарына түз же 1 конуу менен рейс.",
-      "ru": "Рейс Бишкек (FRU) — Стамбул (IST), прямой или с 1 пересадкой.",
-      "en": "Flight Бишкек (FRU) — Стамбул (IST), direct or 1 stop."
-    },
-    "specs": [
-      [
-        "from",
-        "Бишкек (FRU)"
-      ],
-      [
-        "to",
-        "Стамбул (IST)"
-      ],
-      [
-        "airline",
-        "Turkish Airlines / Pegasus"
-      ],
-      [
-        "time",
-        "6 с"
-      ],
-      [
-        "bag",
-        "Кол жүгү 10 кг"
-      ],
-      [
-        "type",
-        "Эконом"
-      ]
-    ],
-    "tags": [
-      "стамбул"
-    ],
-    "image": "https://loremflickr.com/800/600/istanbul,bosphorus?lock=576",
-    "gallery": [
-      "https://loremflickr.com/800/600/istanbul,bosphorus?lock=577",
-      "https://loremflickr.com/800/600/istanbul,bosphorus?lock=578"
+      "https://loremflickr.com/800/600/airport,kyrgyzstan?lock=2693",
+      "https://loremflickr.com/800/600/airport,kyrgyzstan?lock=2694"
     ]
   },
   {
     "buyable": true,
     "popular": 7,
-    "id": "fru-ala",
-    "title": "Бишкек → Алматы",
-    "subtitle": {
-      "ky": "Air Astana / FlyArystan · 45 мүн",
-      "ru": "Air Astana / FlyArystan · 45 мүн",
-      "en": "Air Astana / FlyArystan · 45 мүн"
+    "id": "bishkek-issyk-kul-tamchy",
+    "title": {
+      "ky": "Бишкек → Ысык-Көл (Тамчы)",
+      "ru": "Бишкек → Иссык-Куль (Тамчы)",
+      "en": "Bishkek → Issyk-Kul (Tamchy)"
     },
-    "category": "asia",
-    "price": 8500,
+    "category": "domestic",
+    "price": 3500,
+    "stock": 7,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
     "desc": {
-      "ky": "Бишкек (FRU) шаарынан Алматы (ALA) шаарына түз же 1 конуу менен рейс.",
-      "ru": "Рейс Бишкек (FRU) — Алматы (ALA), прямой или с 1 пересадкой.",
-      "en": "Flight Бишкек (FRU) — Алматы (ALA), direct or 1 stop."
+      "ky": "Жайкы мезгилде Тамчы аэропортуна.",
+      "ru": "Летом в аэропорт Тамчы.",
+      "en": "Summer flights to Tamchy."
     },
     "specs": [
       [
         "from",
-        "Бишкек (FRU)"
+        "FRU"
       ],
       [
         "to",
-        "Алматы (ALA)"
+        "IKU"
       ],
       [
         "airline",
-        "Air Astana / FlyArystan"
+        "TezJet"
       ],
       [
         "time",
@@ -453,47 +213,565 @@ export default [
       ],
       [
         "bag",
-        "Кол жүгү 10 кг"
+        "10 кг"
       ],
       [
         "type",
-        "Эконом"
+        "Түз (жай)"
       ]
     ],
-    "tags": [
-      "алматы"
-    ],
-    "image": "https://loremflickr.com/800/600/almaty,mountains?lock=583",
+    "tags": [],
+    "wiki": "Issyk-Kul International Airport",
+    "image": "https://loremflickr.com/800/600/airport,kyrgyzstan?lock=5756",
     "gallery": [
-      "https://loremflickr.com/800/600/almaty,mountains?lock=584",
-      "https://loremflickr.com/800/600/almaty,mountains?lock=585"
+      "https://loremflickr.com/800/600/airport,kyrgyzstan?lock=5757",
+      "https://loremflickr.com/800/600/airport,kyrgyzstan?lock=5758"
     ]
   },
   {
     "buyable": true,
-    "popular": 5,
-    "id": "fru-urc",
-    "title": "Бишкек → Үрүмчү",
-    "subtitle": {
-      "ky": "China Southern · 2 с",
-      "ru": "China Southern · 2 с",
-      "en": "China Southern · 2 с"
+    "popular": 17,
+    "id": "osh-bishkek",
+    "title": {
+      "ky": "Ош → Бишкек",
+      "ru": "Ош → Бишкек",
+      "en": "Osh → Bishkek"
     },
-    "category": "asia",
-    "price": 19000,
+    "category": "domestic",
+    "price": 3900,
+    "stock": 12,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
     "desc": {
-      "ky": "Бишкек (FRU) шаарынан Үрүмчү (URC) шаарына түз же 1 конуу менен рейс.",
-      "ru": "Рейс Бишкек (FRU) — Үрүмчү (URC), прямой или с 1 пересадкой.",
-      "en": "Flight Бишкек (FRU) — Үрүмчү (URC), direct or 1 stop."
+      "ky": "Ош шаарынан борборго күнүмдүк рейстер.",
+      "ru": "Ежедневные рейсы из Оша в столицу.",
+      "en": "Daily flights from Osh to the capital."
     },
     "specs": [
       [
         "from",
-        "Бишкек (FRU)"
+        "OSS"
       ],
       [
         "to",
-        "Үрүмчү (URC)"
+        "FRU"
+      ],
+      [
+        "airline",
+        "Avia Traffic"
+      ],
+      [
+        "time",
+        "55 мүн"
+      ],
+      [
+        "bag",
+        "10 кг"
+      ],
+      [
+        "type",
+        "Түз"
+      ]
+    ],
+    "tags": [],
+    "wiki": "Bishkek",
+    "image": "https://loremflickr.com/800/600/airport,kyrgyzstan?lock=6841",
+    "gallery": [
+      "https://loremflickr.com/800/600/airport,kyrgyzstan?lock=6842",
+      "https://loremflickr.com/800/600/airport,kyrgyzstan?lock=6843"
+    ]
+  },
+  {
+    "buyable": true,
+    "popular": 19,
+    "id": "bishkek-moscow",
+    "title": {
+      "ky": "Бишкек → Москва",
+      "ru": "Бишкек → Москва",
+      "en": "Bishkek → Moscow"
+    },
+    "category": "russia",
+    "price": 14900,
+    "stock": 16,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
+    "desc": {
+      "ky": "Шереметьево, Домодедово жана Внуково — күн сайын.",
+      "ru": "Шереметьево, Домодедово и Внуково — ежедневно.",
+      "en": "Daily to Sheremetyevo, Domodedovo and Vnukovo."
+    },
+    "specs": [
+      [
+        "from",
+        "FRU"
+      ],
+      [
+        "to",
+        "SVO"
+      ],
+      [
+        "airline",
+        "Аэрофлот"
+      ],
+      [
+        "time",
+        "4 с 50 мүн"
+      ],
+      [
+        "bag",
+        "23 кг"
+      ],
+      [
+        "type",
+        "Түз"
+      ]
+    ],
+    "tags": [],
+    "wiki": "Moscow",
+    "image": "https://loremflickr.com/800/600/moscow,city?lock=869",
+    "gallery": [
+      "https://loremflickr.com/800/600/moscow,city?lock=870",
+      "https://loremflickr.com/800/600/moscow,city?lock=871"
+    ]
+  },
+  {
+    "buyable": true,
+    "popular": 15,
+    "id": "bishkek-st-petersburg",
+    "title": {
+      "ky": "Бишкек → Санкт-Петербург",
+      "ru": "Бишкек → Санкт-Петербург",
+      "en": "Bishkek → St Petersburg"
+    },
+    "category": "russia",
+    "price": 16900,
+    "stock": 5,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
+    "desc": {
+      "ky": "Пулково аэропортуна түз рейс.",
+      "ru": "Прямой рейс в Пулково.",
+      "en": "Direct flight to Pulkovo."
+    },
+    "specs": [
+      [
+        "from",
+        "FRU"
+      ],
+      [
+        "to",
+        "LED"
+      ],
+      [
+        "airline",
+        "Уральские авиалинии"
+      ],
+      [
+        "time",
+        "5 с 30 мүн"
+      ],
+      [
+        "bag",
+        "23 кг"
+      ],
+      [
+        "type",
+        "Түз"
+      ]
+    ],
+    "tags": [],
+    "wiki": "Saint Petersburg",
+    "image": "https://loremflickr.com/800/600/moscow,city?lock=2856",
+    "gallery": [
+      "https://loremflickr.com/800/600/moscow,city?lock=2857",
+      "https://loremflickr.com/800/600/moscow,city?lock=2858"
+    ]
+  },
+  {
+    "buyable": true,
+    "popular": 3,
+    "id": "bishkek-kazan",
+    "title": {
+      "ky": "Бишкек → Казань",
+      "ru": "Бишкек → Казань",
+      "en": "Bishkek → Kazan"
+    },
+    "category": "russia",
+    "price": 12500,
+    "stock": 3,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
+    "desc": {
+      "ky": "Татарстандын борборуна.",
+      "ru": "В столицу Татарстана.",
+      "en": "To the capital of Tatarstan."
+    },
+    "specs": [
+      [
+        "from",
+        "FRU"
+      ],
+      [
+        "to",
+        "KZN"
+      ],
+      [
+        "airline",
+        "Air Manas"
+      ],
+      [
+        "time",
+        "4 саат"
+      ],
+      [
+        "bag",
+        "20 кг"
+      ],
+      [
+        "type",
+        "Түз"
+      ]
+    ],
+    "tags": [],
+    "wiki": "Kazan",
+    "image": "https://loremflickr.com/800/600/moscow,city?lock=2062",
+    "gallery": [
+      "https://loremflickr.com/800/600/moscow,city?lock=2063",
+      "https://loremflickr.com/800/600/moscow,city?lock=2064"
+    ]
+  },
+  {
+    "buyable": true,
+    "popular": 2,
+    "id": "bishkek-novosibirsk",
+    "title": {
+      "ky": "Бишкек → Новосибирск",
+      "ru": "Бишкек → Новосибирск",
+      "en": "Bishkek → Novosibirsk"
+    },
+    "category": "russia",
+    "price": 11500,
+    "stock": 11,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
+    "desc": {
+      "ky": "Толмачево аэропортуна.",
+      "ru": "В аэропорт Толмачёво.",
+      "en": "To Tolmachevo airport."
+    },
+    "specs": [
+      [
+        "from",
+        "FRU"
+      ],
+      [
+        "to",
+        "OVB"
+      ],
+      [
+        "airline",
+        "S7 Airlines"
+      ],
+      [
+        "time",
+        "3 с 10 мүн"
+      ],
+      [
+        "bag",
+        "23 кг"
+      ],
+      [
+        "type",
+        "Түз"
+      ]
+    ],
+    "tags": [],
+    "wiki": "Novosibirsk",
+    "image": "https://loremflickr.com/800/600/moscow,city?lock=2880",
+    "gallery": [
+      "https://loremflickr.com/800/600/moscow,city?lock=2881",
+      "https://loremflickr.com/800/600/moscow,city?lock=2882"
+    ]
+  },
+  {
+    "buyable": true,
+    "popular": 1,
+    "id": "bishkek-yekaterinburg",
+    "title": {
+      "ky": "Бишкек → Екатеринбург",
+      "ru": "Бишкек → Екатеринбург",
+      "en": "Bishkek → Yekaterinburg"
+    },
+    "category": "russia",
+    "price": 12900,
+    "stock": 8,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
+    "desc": {
+      "ky": "Урал аймагына түз рейс.",
+      "ru": "Прямой рейс на Урал.",
+      "en": "Direct to the Urals."
+    },
+    "specs": [
+      [
+        "from",
+        "FRU"
+      ],
+      [
+        "to",
+        "SVX"
+      ],
+      [
+        "airline",
+        "Уральские авиалинии"
+      ],
+      [
+        "time",
+        "3 с 40 мүн"
+      ],
+      [
+        "bag",
+        "23 кг"
+      ],
+      [
+        "type",
+        "Түз"
+      ]
+    ],
+    "tags": [],
+    "wiki": "Yekaterinburg",
+    "image": "https://loremflickr.com/800/600/moscow,city?lock=3921",
+    "gallery": [
+      "https://loremflickr.com/800/600/moscow,city?lock=3922",
+      "https://loremflickr.com/800/600/moscow,city?lock=3923"
+    ]
+  },
+  {
+    "buyable": true,
+    "popular": 10,
+    "id": "osh-moscow",
+    "title": {
+      "ky": "Ош → Москва",
+      "ru": "Ош → Москва",
+      "en": "Osh → Moscow"
+    },
+    "category": "russia",
+    "price": 15900,
+    "stock": 7,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
+    "desc": {
+      "ky": "Ош шаарынан Москвага түз.",
+      "ru": "Прямой рейс из Оша в Москву.",
+      "en": "Direct from Osh to Moscow."
+    },
+    "specs": [
+      [
+        "from",
+        "OSS"
+      ],
+      [
+        "to",
+        "VKO"
+      ],
+      [
+        "airline",
+        "Azur Air"
+      ],
+      [
+        "time",
+        "5 саат"
+      ],
+      [
+        "bag",
+        "23 кг"
+      ],
+      [
+        "type",
+        "Түз"
+      ]
+    ],
+    "tags": [],
+    "wiki": "Moscow",
+    "image": "https://loremflickr.com/800/600/moscow,city?lock=6206",
+    "gallery": [
+      "https://loremflickr.com/800/600/moscow,city?lock=6207",
+      "https://loremflickr.com/800/600/moscow,city?lock=6208"
+    ]
+  },
+  {
+    "buyable": true,
+    "popular": 18,
+    "id": "bishkek-istanbul",
+    "title": {
+      "ky": "Бишкек → Стамбул",
+      "ru": "Бишкек → Стамбул",
+      "en": "Bishkek → Istanbul"
+    },
+    "category": "asia",
+    "price": 19900,
+    "stock": 12,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
+    "desc": {
+      "ky": "Стамбул аэропортуна, андан ары дүйнөгө.",
+      "ru": "В аэропорт Стамбула и дальше по миру.",
+      "en": "To Istanbul Airport and beyond."
+    },
+    "specs": [
+      [
+        "from",
+        "FRU"
+      ],
+      [
+        "to",
+        "IST"
+      ],
+      [
+        "airline",
+        "Turkish Airlines"
+      ],
+      [
+        "time",
+        "6 саат"
+      ],
+      [
+        "bag",
+        "23 кг"
+      ],
+      [
+        "type",
+        "Түз"
+      ]
+    ],
+    "tags": [],
+    "wiki": "Istanbul",
+    "image": "https://loremflickr.com/800/600/asia,city?lock=2989",
+    "gallery": [
+      "https://loremflickr.com/800/600/asia,city?lock=2990",
+      "https://loremflickr.com/800/600/asia,city?lock=2991"
+    ]
+  },
+  {
+    "buyable": true,
+    "popular": 8,
+    "id": "bishkek-almaty",
+    "title": {
+      "ky": "Бишкек → Алматы",
+      "ru": "Бишкек → Алматы",
+      "en": "Bishkek → Almaty"
+    },
+    "category": "asia",
+    "price": 6500,
+    "stock": 12,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
+    "desc": {
+      "ky": "Эң кыска эл аралык рейс — 40 мүнөт.",
+      "ru": "Самый короткий международный рейс — 40 минут.",
+      "en": "The shortest international hop — 40 min."
+    },
+    "specs": [
+      [
+        "from",
+        "FRU"
+      ],
+      [
+        "to",
+        "ALA"
+      ],
+      [
+        "airline",
+        "Air Astana"
+      ],
+      [
+        "time",
+        "40 мүн"
+      ],
+      [
+        "bag",
+        "23 кг"
+      ],
+      [
+        "type",
+        "Түз"
+      ]
+    ],
+    "tags": [],
+    "wiki": "Almaty",
+    "image": "https://loremflickr.com/800/600/asia,city?lock=8983",
+    "gallery": [
+      "https://loremflickr.com/800/600/asia,city?lock=8984",
+      "https://loremflickr.com/800/600/asia,city?lock=8985"
+    ]
+  },
+  {
+    "buyable": true,
+    "popular": 7,
+    "id": "bishkek-urumqi",
+    "title": {
+      "ky": "Бишкек → Үрүмчү",
+      "ru": "Бишкек → Урумчи",
+      "en": "Bishkek → Ürümqi"
+    },
+    "category": "asia",
+    "price": 13500,
+    "stock": 15,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
+    "desc": {
+      "ky": "Кытайга эң жакын багыт.",
+      "ru": "Ближайшее направление в Китай.",
+      "en": "The closest gateway to China."
+    },
+    "specs": [
+      [
+        "from",
+        "FRU"
+      ],
+      [
+        "to",
+        "URC"
       ],
       [
         "airline",
@@ -501,55 +779,288 @@ export default [
       ],
       [
         "time",
-        "2 с"
+        "2 саат"
       ],
       [
         "bag",
-        "Кол жүгү 10 кг"
+        "23 кг"
       ],
       [
         "type",
-        "Эконом"
+        "Түз"
       ]
     ],
-    "tags": [
-      "үрүмчү"
-    ],
-    "image": "https://loremflickr.com/800/600/china,city?lock=590",
+    "tags": [],
+    "wiki": "Ürümqi",
+    "image": "https://loremflickr.com/800/600/asia,city?lock=6880",
     "gallery": [
-      "https://loremflickr.com/800/600/china,city?lock=591",
-      "https://loremflickr.com/800/600/china,city?lock=592"
+      "https://loremflickr.com/800/600/asia,city?lock=6881",
+      "https://loremflickr.com/800/600/asia,city?lock=6882"
     ]
   },
   {
     "buyable": true,
-    "popular": 9,
-    "id": "fru-dxb",
-    "title": "Бишкек → Дубай",
-    "subtitle": {
-      "ky": "flydubai / Air Arabia · 4 с 30 мүн",
-      "ru": "flydubai / Air Arabia · 4 с 30 мүн",
-      "en": "flydubai / Air Arabia · 4 с 30 мүн"
+    "popular": 6,
+    "id": "bishkek-tashkent",
+    "title": {
+      "ky": "Бишкек → Ташкент",
+      "ru": "Бишкек → Ташкент",
+      "en": "Bishkek → Tashkent"
     },
-    "category": "mideast",
-    "price": 24500,
+    "category": "asia",
+    "price": 7900,
+    "stock": 18,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
     "desc": {
-      "ky": "Бишкек (FRU) шаарынан Дубай (DXB) шаарына түз же 1 конуу менен рейс.",
-      "ru": "Рейс Бишкек (FRU) — Дубай (DXB), прямой или с 1 пересадкой.",
-      "en": "Flight Бишкек (FRU) — Дубай (DXB), direct or 1 stop."
+      "ky": "Өзбекстандын борборуна түз рейс.",
+      "ru": "Прямой рейс в столицу Узбекистана.",
+      "en": "Direct to Uzbekistan’s capital."
     },
     "specs": [
       [
         "from",
-        "Бишкек (FRU)"
+        "FRU"
       ],
       [
         "to",
-        "Дубай (DXB)"
+        "TAS"
       ],
       [
         "airline",
-        "flydubai / Air Arabia"
+        "Uzbekistan Airways"
+      ],
+      [
+        "time",
+        "1 саат"
+      ],
+      [
+        "bag",
+        "23 кг"
+      ],
+      [
+        "type",
+        "Түз"
+      ]
+    ],
+    "tags": [],
+    "wiki": "Tashkent",
+    "image": "https://loremflickr.com/800/600/asia,city?lock=1213",
+    "gallery": [
+      "https://loremflickr.com/800/600/asia,city?lock=1214",
+      "https://loremflickr.com/800/600/asia,city?lock=1215"
+    ]
+  },
+  {
+    "buyable": true,
+    "popular": 16,
+    "id": "bishkek-seoul",
+    "title": {
+      "ky": "Бишкек → Сеул",
+      "ru": "Бишкек → Сеул",
+      "en": "Bishkek → Seoul"
+    },
+    "category": "asia",
+    "price": 32000,
+    "stock": 4,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
+    "desc": {
+      "ky": "Инчхон аэропортуна, студенттер жана иштегендер үчүн.",
+      "ru": "В Инчхон — для студентов и работников.",
+      "en": "To Incheon — popular with students and workers."
+    },
+    "specs": [
+      [
+        "from",
+        "FRU"
+      ],
+      [
+        "to",
+        "ICN"
+      ],
+      [
+        "airline",
+        "Asiana"
+      ],
+      [
+        "time",
+        "6 с 30 мүн"
+      ],
+      [
+        "bag",
+        "23 кг"
+      ],
+      [
+        "type",
+        "Түз"
+      ]
+    ],
+    "tags": [],
+    "wiki": "Seoul",
+    "image": "https://loremflickr.com/800/600/asia,city?lock=2441",
+    "gallery": [
+      "https://loremflickr.com/800/600/asia,city?lock=2442",
+      "https://loremflickr.com/800/600/asia,city?lock=2443"
+    ]
+  },
+  {
+    "buyable": true,
+    "popular": 4,
+    "id": "bishkek-bangkok",
+    "title": {
+      "ky": "Бишкек → Бангкок",
+      "ru": "Бишкек → Бангкок",
+      "en": "Bishkek → Bangkok"
+    },
+    "category": "asia",
+    "price": 34000,
+    "stock": 19,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
+    "desc": {
+      "ky": "Таиландга эс алууга түз чартер.",
+      "ru": "Прямой чартер на отдых в Таиланд.",
+      "en": "Direct holiday charter to Thailand."
+    },
+    "specs": [
+      [
+        "from",
+        "FRU"
+      ],
+      [
+        "to",
+        "BKK"
+      ],
+      [
+        "airline",
+        "Air Manas"
+      ],
+      [
+        "time",
+        "7 саат"
+      ],
+      [
+        "bag",
+        "20 кг"
+      ],
+      [
+        "type",
+        "Чартер"
+      ]
+    ],
+    "tags": [],
+    "wiki": "Bangkok",
+    "image": "https://loremflickr.com/800/600/asia,city?lock=692",
+    "gallery": [
+      "https://loremflickr.com/800/600/asia,city?lock=693",
+      "https://loremflickr.com/800/600/asia,city?lock=694"
+    ]
+  },
+  {
+    "buyable": true,
+    "popular": 3,
+    "id": "bishkek-delhi",
+    "title": {
+      "ky": "Бишкек → Дели",
+      "ru": "Бишкек → Дели",
+      "en": "Bishkek → Delhi"
+    },
+    "category": "asia",
+    "price": 22000,
+    "stock": 12,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
+    "desc": {
+      "ky": "Индияга түз рейс.",
+      "ru": "Прямой рейс в Индию.",
+      "en": "Direct to India."
+    },
+    "specs": [
+      [
+        "from",
+        "FRU"
+      ],
+      [
+        "to",
+        "DEL"
+      ],
+      [
+        "airline",
+        "Air India"
+      ],
+      [
+        "time",
+        "3 с 30 мүн"
+      ],
+      [
+        "bag",
+        "23 кг"
+      ],
+      [
+        "type",
+        "Түз"
+      ]
+    ],
+    "tags": [],
+    "wiki": "Delhi",
+    "image": "https://loremflickr.com/800/600/asia,city?lock=6337",
+    "gallery": [
+      "https://loremflickr.com/800/600/asia,city?lock=6338",
+      "https://loremflickr.com/800/600/asia,city?lock=6339"
+    ]
+  },
+  {
+    "buyable": true,
+    "popular": 18,
+    "id": "bishkek-dubai",
+    "title": {
+      "ky": "Бишкек → Дубай",
+      "ru": "Бишкек → Дубай",
+      "en": "Bishkek → Dubai"
+    },
+    "category": "mideast",
+    "price": 21000,
+    "stock": 11,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
+    "desc": {
+      "ky": "Күн сайын Дубайга, flydubai жана Air Arabia.",
+      "ru": "Ежедневно в Дубай, flydubai и Air Arabia.",
+      "en": "Daily to Dubai on flydubai and Air Arabia."
+    },
+    "specs": [
+      [
+        "from",
+        "FRU"
+      ],
+      [
+        "to",
+        "DXB"
+      ],
+      [
+        "airline",
+        "flydubai"
       ],
       [
         "time",
@@ -557,73 +1068,418 @@ export default [
       ],
       [
         "bag",
-        "Кол жүгү 10 кг"
+        "20 кг"
       ],
       [
         "type",
-        "Эконом"
+        "Түз"
       ]
     ],
-    "tags": [
-      "дубай"
-    ],
-    "badge": "ХИТ",
-    "image": "https://loremflickr.com/800/600/dubai,airport?lock=597",
+    "tags": [],
+    "wiki": "Dubai",
+    "image": "https://loremflickr.com/800/600/dubai?lock=5166",
     "gallery": [
-      "https://loremflickr.com/800/600/dubai,airport?lock=598",
-      "https://loremflickr.com/800/600/dubai,airport?lock=599"
+      "https://loremflickr.com/800/600/dubai?lock=5167",
+      "https://loremflickr.com/800/600/dubai?lock=5168"
+    ]
+  },
+  {
+    "buyable": true,
+    "popular": 1,
+    "id": "bishkek-jeddah",
+    "title": {
+      "ky": "Бишкек → Жидда",
+      "ru": "Бишкек → Джидда",
+      "en": "Bishkek → Jeddah"
+    },
+    "category": "mideast",
+    "price": 29000,
+    "stock": 20,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
+    "desc": {
+      "ky": "Умра жана ажылык үчүн рейстер.",
+      "ru": "Рейсы для умры и хаджа.",
+      "en": "Flights for Umrah and Hajj."
+    },
+    "specs": [
+      [
+        "from",
+        "FRU"
+      ],
+      [
+        "to",
+        "JED"
+      ],
+      [
+        "airline",
+        "Saudia"
+      ],
+      [
+        "time",
+        "6 саат"
+      ],
+      [
+        "bag",
+        "23 кг"
+      ],
+      [
+        "type",
+        "Түз"
+      ]
+    ],
+    "tags": [],
+    "wiki": "Jeddah",
+    "image": "https://loremflickr.com/800/600/dubai?lock=2853",
+    "gallery": [
+      "https://loremflickr.com/800/600/dubai?lock=2854",
+      "https://loremflickr.com/800/600/dubai?lock=2855"
+    ]
+  },
+  {
+    "buyable": true,
+    "popular": 10,
+    "id": "bishkek-sharjah",
+    "title": {
+      "ky": "Бишкек → Шарджа",
+      "ru": "Бишкек → Шарджа",
+      "en": "Bishkek → Sharjah"
+    },
+    "category": "mideast",
+    "price": 17500,
+    "stock": 11,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
+    "desc": {
+      "ky": "Дубайдын жанындагы арзан альтернатива.",
+      "ru": "Бюджетная альтернатива рядом с Дубаем.",
+      "en": "A cheaper alternative next to Dubai."
+    },
+    "specs": [
+      [
+        "from",
+        "FRU"
+      ],
+      [
+        "to",
+        "SHJ"
+      ],
+      [
+        "airline",
+        "Air Arabia"
+      ],
+      [
+        "time",
+        "4 с 20 мүн"
+      ],
+      [
+        "bag",
+        "10 кг"
+      ],
+      [
+        "type",
+        "Түз"
+      ]
+    ],
+    "tags": [],
+    "wiki": "Sharjah",
+    "image": "https://loremflickr.com/800/600/dubai?lock=4968",
+    "gallery": [
+      "https://loremflickr.com/800/600/dubai?lock=4969",
+      "https://loremflickr.com/800/600/dubai?lock=4970"
+    ]
+  },
+  {
+    "buyable": true,
+    "popular": 9,
+    "id": "bishkek-antalya",
+    "title": {
+      "ky": "Бишкек → Анталия",
+      "ru": "Бишкек → Анталья",
+      "en": "Bishkek → Antalya"
+    },
+    "category": "mideast",
+    "price": 18500,
+    "stock": 20,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
+    "desc": {
+      "ky": "Жайкы мезгилде деңизге түз рейс.",
+      "ru": "Летний прямой рейс к морю.",
+      "en": "Summer direct flight to the sea."
+    },
+    "specs": [
+      [
+        "from",
+        "FRU"
+      ],
+      [
+        "to",
+        "AYT"
+      ],
+      [
+        "airline",
+        "Pegasus"
+      ],
+      [
+        "time",
+        "6 саат"
+      ],
+      [
+        "bag",
+        "20 кг"
+      ],
+      [
+        "type",
+        "Түз (жай)"
+      ]
+    ],
+    "tags": [],
+    "wiki": "Antalya",
+    "image": "https://loremflickr.com/800/600/dubai?lock=6615",
+    "gallery": [
+      "https://loremflickr.com/800/600/dubai?lock=6616",
+      "https://loremflickr.com/800/600/dubai?lock=6617"
+    ]
+  },
+  {
+    "buyable": true,
+    "popular": 8,
+    "id": "bishkek-frankfurt",
+    "title": {
+      "ky": "Бишкек → Франкфурт",
+      "ru": "Бишкек → Франкфурт",
+      "en": "Bishkek → Frankfurt"
+    },
+    "category": "europe",
+    "price": 36000,
+    "stock": 19,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
+    "desc": {
+      "ky": "Стамбул аркылуу, Германияга.",
+      "ru": "Через Стамбул в Германию.",
+      "en": "To Germany via Istanbul."
+    },
+    "specs": [
+      [
+        "from",
+        "FRU"
+      ],
+      [
+        "to",
+        "FRA"
+      ],
+      [
+        "airline",
+        "Turkish Airlines"
+      ],
+      [
+        "time",
+        "10 саат"
+      ],
+      [
+        "bag",
+        "23 кг"
+      ],
+      [
+        "type",
+        "1 которуу"
+      ]
+    ],
+    "tags": [],
+    "wiki": "Frankfurt",
+    "image": "https://loremflickr.com/800/600/europe,airport?lock=1232",
+    "gallery": [
+      "https://loremflickr.com/800/600/europe,airport?lock=1233",
+      "https://loremflickr.com/800/600/europe,airport?lock=1234"
+    ]
+  },
+  {
+    "buyable": true,
+    "popular": 14,
+    "id": "bishkek-rome",
+    "title": {
+      "ky": "Бишкек → Рим",
+      "ru": "Бишкек → Рим",
+      "en": "Bishkek → Rome"
+    },
+    "category": "europe",
+    "price": 38000,
+    "stock": 17,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
+    "desc": {
+      "ky": "Италияда окуган студенттер үчүн ыңгайлуу.",
+      "ru": "Удобно для студентов в Италии.",
+      "en": "Handy for students in Italy."
+    },
+    "specs": [
+      [
+        "from",
+        "FRU"
+      ],
+      [
+        "to",
+        "FCO"
+      ],
+      [
+        "airline",
+        "Turkish Airlines"
+      ],
+      [
+        "time",
+        "10 с 30 мүн"
+      ],
+      [
+        "bag",
+        "23 кг"
+      ],
+      [
+        "type",
+        "1 которуу"
+      ]
+    ],
+    "tags": [],
+    "wiki": "Rome",
+    "image": "https://loremflickr.com/800/600/europe,airport?lock=3840",
+    "gallery": [
+      "https://loremflickr.com/800/600/europe,airport?lock=3841",
+      "https://loremflickr.com/800/600/europe,airport?lock=3842"
     ]
   },
   {
     "buyable": true,
     "popular": 6,
-    "id": "fru-jed",
-    "title": "Бишкек → Жидда",
-    "subtitle": {
-      "ky": "flynas / Saudia · 6 с (1 конуу)",
-      "ru": "flynas / Saudia · 6 с (1 конуу)",
-      "en": "flynas / Saudia · 6 с (1 конуу)"
+    "id": "bishkek-london",
+    "title": {
+      "ky": "Бишкек → Лондон",
+      "ru": "Бишкек → Лондон",
+      "en": "Bishkek → London"
     },
-    "category": "mideast",
-    "price": 42000,
+    "category": "europe",
+    "price": 45000,
+    "stock": 20,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
     "desc": {
-      "ky": "Бишкек (FRU) шаарынан Жидда (JED) шаарына түз же 1 конуу менен рейс.",
-      "ru": "Рейс Бишкек (FRU) — Жидда (JED), прямой или с 1 пересадкой.",
-      "en": "Flight Бишкек (FRU) — Жидда (JED), direct or 1 stop."
+      "ky": "Хитроу аэропортуна, бир которуу менен.",
+      "ru": "В Хитроу с одной пересадкой.",
+      "en": "To Heathrow with one stop."
     },
     "specs": [
       [
         "from",
-        "Бишкек (FRU)"
+        "FRU"
       ],
       [
         "to",
-        "Жидда (JED)"
+        "LHR"
       ],
       [
         "airline",
-        "flynas / Saudia"
+        "Turkish Airlines"
       ],
       [
         "time",
-        "6 с (1 конуу)"
+        "11 саат"
       ],
       [
         "bag",
-        "Кол жүгү 10 кг"
+        "23 кг"
       ],
       [
         "type",
-        "Эконом"
+        "1 которуу"
       ]
     ],
-    "tags": [
-      "жидда"
-    ],
-    "image": "https://loremflickr.com/800/600/mecca,saudi?lock=604",
+    "tags": [],
+    "wiki": "London",
+    "image": "https://loremflickr.com/800/600/europe,airport?lock=5715",
     "gallery": [
-      "https://loremflickr.com/800/600/mecca,saudi?lock=605",
-      "https://loremflickr.com/800/600/mecca,saudi?lock=606"
+      "https://loremflickr.com/800/600/europe,airport?lock=5716",
+      "https://loremflickr.com/800/600/europe,airport?lock=5717"
+    ]
+  },
+  {
+    "buyable": true,
+    "popular": 5,
+    "id": "bishkek-prague",
+    "title": {
+      "ky": "Бишкек → Прага",
+      "ru": "Бишкек → Прага",
+      "en": "Bishkek → Prague"
+    },
+    "category": "europe",
+    "price": 37000,
+    "stock": 20,
+    "priceFrom": true,
+    "priceSuffix": {
+      "ky": "/бир тарап",
+      "ru": "/в одну сторону",
+      "en": "/one way"
+    },
+    "desc": {
+      "ky": "Чехияга бир которуу менен.",
+      "ru": "В Чехию с одной пересадкой.",
+      "en": "To Czechia with one stop."
+    },
+    "specs": [
+      [
+        "from",
+        "FRU"
+      ],
+      [
+        "to",
+        "PRG"
+      ],
+      [
+        "airline",
+        "Turkish Airlines"
+      ],
+      [
+        "time",
+        "10 саат"
+      ],
+      [
+        "bag",
+        "23 кг"
+      ],
+      [
+        "type",
+        "1 которуу"
+      ]
+    ],
+    "tags": [],
+    "wiki": "Prague",
+    "image": "https://loremflickr.com/800/600/europe,airport?lock=7659",
+    "gallery": [
+      "https://loremflickr.com/800/600/europe,airport?lock=7660",
+      "https://loremflickr.com/800/600/europe,airport?lock=7661"
     ]
   }
 ];
